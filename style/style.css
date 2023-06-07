@@ -155,7 +155,7 @@ span.my_searchbar {
     min-height: 60px;
     padding: 5px 5px 5px 15px;
     border-radius: 10px;
-    background-color: white;
+    background-color: #d5f9ba;
 }
 
 .chat-time-txt {
@@ -174,8 +174,8 @@ span.my_searchbar {
     background-color: #e9ebeb;
 }
 
-.my_bg-color-lt-green {
-    background-color: #d5f9ba;
+.my_bg-color-lt-white {
+    background-color: white;
 }
 
 .my_color-light-blue {
