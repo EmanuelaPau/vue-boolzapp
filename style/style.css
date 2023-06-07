@@ -44,6 +44,13 @@
     font-size: 1.1rem;
 }
 
+.alert-bar {
+    background-color: #8edafc;
+    width: 100%;
+    height: 85px;
+}
+
+
 .app-main-container {
     height: 100%;
     /* background-color: blue; */
