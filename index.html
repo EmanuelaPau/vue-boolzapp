@@ -132,7 +132,7 @@
                                 <a href=""><i class="fa-regular fa-face-smile"></i></a>
 
                                 <!-- input message  -->
-                                <input type="text" class="form-control" placeholder="Scrivi un messaggio" aria-label="Scrivi un messaggio" aria-describedby="basic-addon2" v-model="myNewMessage" @keyup.enter="sendMessage()">
+                                <input type="text" class="form-control" placeholder="Scrivi un messaggio" aria-label="Scrivi un messaggio" aria-describedby="basic-addon2" v-model="myNewMessage" @keyup.enter="sendMessage(), sendReply() ">
 
                                 <a href=""><i class="fa-solid fa-microphone"></i></a>
                             </div>
