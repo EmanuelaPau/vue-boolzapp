@@ -17,7 +17,6 @@ createApp({
     data() {
         return {
             // Contacts array 
-            contactIndex: 0,
             contacts: [
                 {
                     name: 'Michele',
@@ -188,6 +187,8 @@ createApp({
                 }
             ],
 
+            contactIndex: 0,
+            myMessages: contacts[contactIndex].messages
         }
     },
     methods: {

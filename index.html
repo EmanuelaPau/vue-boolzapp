@@ -128,7 +128,7 @@
                             </div>
 
                             <!-- Main footer -->
-                            <div class="main-app-footer d-flex justify-content-around align-items-center">
+                            <div class="main-app-footer d-flex justify-content-around align-items-center" v-for="(message, i) in contacts[contactIndex].messages">
                                 <a href=""><i class="fa-regular fa-face-smile"></i></a>
                                 <input type="text" class="form-control" placeholder="Scrivi un messaggio" aria-label="Scrivi un messaggio" aria-describedby="basic-addon2">
                                 <a href=""><i class="fa-solid fa-microphone"></i></a>
