@@ -32,6 +32,7 @@ createApp({
                         }
                     ],
                 },
+
                 {
                     name: 'Fabio',
                     avatar: './img/avatar_2.png',
@@ -54,6 +55,7 @@ createApp({
                         }
                     ],
                 },
+
                 {
                     name: 'Samuele',
                     avatar: './img/avatar_3.png',
@@ -93,6 +95,7 @@ createApp({
                         }
                     ],
                 },
+
                 {
                     name: 'Alessandro L.',
                     avatar: './img/avatar_5.png',
@@ -110,6 +113,7 @@ createApp({
                         }
                     ],
                 },
+
                 {
                     name: 'Claudia',
                     avatar: './img/avatar_5.png',
@@ -132,6 +136,7 @@ createApp({
                         }
                     ],
                 },
+
                 {
                     name: 'Federico',
                     avatar: './img/avatar_7.png',
@@ -149,6 +154,7 @@ createApp({
                         }
                     ],
                 },
+
                 {
                     name: 'Davide',
                     avatar: './img/avatar_8.png',
