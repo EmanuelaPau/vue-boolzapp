@@ -78,10 +78,10 @@
                                 <!-- selected: my_bg-color-grey -->
                                 <div class="sidebar-chat-card d-flex justify-content-between" v-for="(contact, index) in contacts">
                                     <div class="d-flex">
-                                        <img class="friend-profile-pic me-3" src="./img/avatar_1.jpg" alt="person chat profile pic">
+                                        <img class="friend-profile-pic me-3" :src="contacts[index].avatar" alt="person chat profile pic">
                                         <div>
-                                            <h4 class="m-0 chat-card-name">Michele</h4>
-                                            <p class="chat-cardt-txt">Ultimo messaggio inviato</p>
+                                            <h4 class="m-0 chat-card-name">{{contacts[index].name}}</h4>
+                                            <p class="chat-cardt-txt">{{contacts[index].messages.at(-1).message}}</p>
                                         </div>
                                     </div>
                                     <p class="chat-cardt-txt">12:00</p>
