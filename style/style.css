@@ -7,7 +7,7 @@
 }
 
 .app-wrapper {
-    max-width: 85%;
+    max-width: 90%;
     margin: 0 auto;
     height: 100%;
     background-color: white;
@@ -33,6 +33,7 @@
     height: 55px;
     width: 55px;
     border-radius: 50%;
+    aspect-ratio: 1 / 1;
 }
 
 .sidebar-header-controls i {
@@ -100,6 +101,7 @@ span.my_searchbar {
     height: 83px;
     padding: 10px 20px;
     border-bottom: 1px solid #ebe8e8;
+    cursor: pointer;
     /* background-color: palegreen; */
     /* border: 1px solid red; */
 }
