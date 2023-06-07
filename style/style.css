@@ -7,7 +7,7 @@
 }
 
 .app-wrapper {
-    max-width: 80%;
+    max-width: 85%;
     margin: 0 auto;
     height: 100%;
     background-color: white;
@@ -48,10 +48,28 @@
     background-color: #8edafc;
     width: 100%;
     height: 85px;
+    padding: 0 20px;
 }
 
+.alert-bar div i {
+    font-size: 1.5rem;
+}
+
+.my_links {
+    color: #638396;
+}
 
 .app-main-container {
     height: 100%;
     /* background-color: blue; */
+}
+
+/* COLORS */
+
+.my_bg-color-light-azure {
+    background-color: #f2fbff;
+}
+
+.my_color-light-blue {
+    color: #8edafc;
 }
