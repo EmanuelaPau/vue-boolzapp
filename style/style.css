@@ -42,7 +42,7 @@
 }
 
 .my_profile-txt {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 /* Sidebar alert bar */
@@ -123,7 +123,20 @@ span.my_searchbar {
 /* MAIN APP */
 
 .app-main-container {
+    height: 100%;
     /* background-color: #8edafc; */
+}
+
+.header-last-access-txt {
+    color: #9da1ac;
+    font-size: .85rem;
+}
+
+.main-chat-container {
+    width: 100%;
+    height: calc(100% - 75px - 75px);
+    background-color: #8edafc;
+    overflow-y: scroll;
 }
 
 /* COLORS */
