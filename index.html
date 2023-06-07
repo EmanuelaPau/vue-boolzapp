@@ -76,7 +76,7 @@
                             <div class="sidebar-chats-container">
                                 <!-- Chat card -->
                                 <!-- selected: my_bg-color-grey -->
-                                <div class="sidebar-chat-card d-flex justify-content-between" v-for="(contact, index) in contacts">
+                                <div class="sidebar-chat-card d-flex justify-content-between" v-for="(contact, index) in contacts" @click="contactIndex = index">
                                     <div class="d-flex">
                                         <img class="friend-profile-pic me-3" :src="contacts[index].avatar" alt="person chat profile pic">
                                         <div>
@@ -116,33 +116,15 @@
 
                             <!-- Chat container -->
                             <div class="main-chat-container">
+
                                 <!-- Message -->
-                                <div class="chat-message-container d-flex justify-content-end">
+                                <div class="chat-message-container d-flex justify-content-end"  >
                                     <div class="chat-message d-flex justify-content-between ">
-                                        <!-- <div class="d-flex justify-content-between"> -->
                                             <div class="h-100 d-flex align-items-center"><p class="m-0">Hai portato a spasso il cane?</p></div>
                                             <div class="h-100 d-flex align-items-end"><p class="m-0 chat-time-txt">15:30</p></div>
-                                        <!-- </div> -->
                                     </div>
                                 </div>
 
-                                <div class="chat-message-container d-flex justify-content-end">
-                                    <div class="chat-message d-flex justify-content-between ">
-                                        <!-- <div class="d-flex justify-content-between"> -->
-                                            <div class="h-100 d-flex align-items-center"><p class="m-0">Ricordati di stendere i panni</p></div>
-                                            <div class="h-100 d-flex align-items-end"><p class="m-0 chat-time-txt">15:30</p></div>
-                                        <!-- </div> -->
-                                    </div>
-                                </div>
-
-                                <div class="chat-message-container d-flex justify-content-start">
-                                    <div class="chat-message my_bg-color-lt-white d-flex justify-content-between ">
-                                        <!-- <div class="d-flex justify-content-between"> -->
-                                            <div class="h-100 d-flex align-items-center"><p class="m-0">Tutto fatto!</p></div>
-                                            <div class="h-100 d-flex align-items-end"><p class="m-0 chat-time-txt">15:30</p></div>
-                                        <!-- </div> -->
-                                    </div>
-                                </div>
                             </div>
 
                             <!-- Main footer -->
