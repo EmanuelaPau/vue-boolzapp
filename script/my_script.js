@@ -189,12 +189,11 @@ createApp({
 
             contactIndex: 0,
             // myMessages: contacts[contactIndex].messages
+            receivedClasses: 'my_bg-color-lt-white'
         }
     },
     methods: {
 
-        addMessages() {
-            console.log('prova');
-        }
+
     }
 }).mount('#app') 
