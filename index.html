@@ -121,7 +121,7 @@
                                 <div class="chat-message-container d-flex justify-content-end"  v-for="(message, i) in contacts[contactIndex].messages" >
                                     <div class="chat-message d-flex justify-content-between ">
                                             <div class="h-100 d-flex align-items-center"><p class="m-0">{{contacts[contactIndex].messages[i].message}}</p></div>
-                                            <div class="h-100 d-flex align-items-end"><p class="m-0 chat-time-txt">15:30</p></div>
+                                            <div class="h-100 d-flex align-items-end"><p class="m-0 chat-time-txt">{{contacts[contactIndex].messages[i].date.substring(10, 16)}}</p></div>
                                     </div>
                                 </div>
 
