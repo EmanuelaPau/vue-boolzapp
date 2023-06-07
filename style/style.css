@@ -2,7 +2,7 @@
     width: 100vw;
     height: 100vh;
     /* background: rgb(255, 255, 255); */
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 85%, rgba(0, 150, 136, 1) 85%);
+    background: linear-gradient(0deg, #dadbd2 85%, rgba(0, 150, 136, 1) 85%);
     padding: 30px;
 }
 
@@ -10,15 +10,16 @@
     max-width: 80%;
     margin: 0 auto;
     height: 100%;
-    background-color: aquamarine;
+    background-color: white;
 }
 
 .app-sidebar-container {
     height: 100%;
-    background-color: brown;
+    border-right: 1px solid #e1e1e1;
+    /* background-color: brown; */
 }
 
 .app-main-container {
     height: 100%;
-    background-color: blue;
+    /* background-color: blue; */
 }
