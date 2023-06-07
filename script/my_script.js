@@ -188,7 +188,7 @@ createApp({
             ],
 
             contactIndex: 0,
-            myMessages: contacts[contactIndex].messages
+            // myMessages: contacts[contactIndex].messages
         }
     },
     methods: {
