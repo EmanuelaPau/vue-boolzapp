@@ -194,21 +194,32 @@ createApp({
                 message: this.myNewMessage,
                 status: 'sent'
             };
+
             this.contacts[this.contactIndex].messages.push(myMessageObject);
 
-            this.myNewMessage = '';
-        },
-
-        sendReply() {
-            myMessageObject = {
+            myReplyObject = {
                 date: '10/01/2020 15:30:55',
                 message: 'ok',
                 status: 'received'
             };
-            this.contacts[this.contactIndex].messages.push(myMessageObject);
+
+            setTimeout(() => {
+                this.contacts[this.contactIndex].messages.push(myReplyObject);
+            }, 1000);
 
             this.myNewMessage = '';
-        }
+        },
+
+        // sendReply() {
+        //     myMessageObject = {
+        //         date: '10/01/2020 15:30:55',
+        //         message: 'ok',
+        //         status: 'received'
+        //     };
+        //     this.contacts[this.contactIndex].messages.push(myMessageObject);
+
+        //     this.myNewMessage = '';
+        // },
 
     }
 }).mount('#app') 
