@@ -118,9 +118,9 @@
                             <div class="main-chat-container">
 
                                 <!-- Message -->
-                                <div class="chat-message-container d-flex justify-content-end"  >
+                                <div class="chat-message-container d-flex justify-content-end"  v-for="(message, i) in contacts[contactIndex].messages" >
                                     <div class="chat-message d-flex justify-content-between ">
-                                            <div class="h-100 d-flex align-items-center"><p class="m-0">Hai portato a spasso il cane?</p></div>
+                                            <div class="h-100 d-flex align-items-center"><p class="m-0">{{contacts[contactIndex].messages[i].message}}</p></div>
                                             <div class="h-100 d-flex align-items-end"><p class="m-0 chat-time-txt">15:30</p></div>
                                     </div>
                                 </div>
@@ -128,7 +128,7 @@
                             </div>
 
                             <!-- Main footer -->
-                            <div class="main-app-footer d-flex justify-content-around align-items-center" v-for="(message, i) in contacts[contactIndex].messages">
+                            <div class="main-app-footer d-flex justify-content-around align-items-center">
                                 <a href=""><i class="fa-regular fa-face-smile"></i></a>
                                 <input type="text" class="form-control" placeholder="Scrivi un messaggio" aria-label="Scrivi un messaggio" aria-describedby="basic-addon2">
                                 <a href=""><i class="fa-solid fa-microphone"></i></a>
