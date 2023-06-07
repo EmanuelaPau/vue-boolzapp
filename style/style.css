@@ -59,6 +59,29 @@
     color: #638396;
 }
 
+.searchbar-container {
+    height: 50px;
+    background-color: #f9f9f9;
+    /* background-color: red; */
+    padding: 5px;
+}
+
+.my_searchbar {
+    border-radius: 0;
+    border: 1px solid #ebe8e8;
+    background-color: white;
+}
+
+span.my_searchbar {
+    height: 100%;
+    width: 100%;
+}
+
+.my_search-button {
+    width: 15%;
+}
+
+
 .app-main-container {
     height: 100%;
     /* background-color: blue; */
