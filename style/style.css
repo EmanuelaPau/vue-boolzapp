@@ -106,6 +106,10 @@ span.my_searchbar {
     /* border: 1px solid red; */
 }
 
+.sidebar-chat-card:hover {
+    background-color: rgb(249, 246, 246);
+}
+
 .friend-profile-pic {
     height: 60px;
     width: 60px;
