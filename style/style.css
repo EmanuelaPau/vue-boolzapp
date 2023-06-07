@@ -97,15 +97,36 @@ span.my_searchbar {
 
 .sidebar-chat-card {
     width: 100%;
-    height: 85px;
-    padding: 20px;
-    background-color: red;
+    height: 83px;
+    padding: 10px 20px;
+    /* background-color: palegreen; */
+    /* border: 1px solid red; */
+}
+
+.friend-profile-pic {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.chat-card-name {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.chat-cardt-txt {
+    font-size: .9rem;
+    color: #c3c2c5;
 }
 
 /* COLORS */
 
 .my_bg-color-light-azure {
     background-color: #f2fbff;
+}
+
+.my_bg-color-grey {
+    background-color: #e9ebeb;
 }
 
 .my_color-light-blue {
