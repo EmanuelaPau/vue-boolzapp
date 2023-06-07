@@ -21,6 +21,7 @@
     /* background-color: brown; */
 }
 
+/* Sidebar header */
 .sidebar-header {
     background-color: #eaeaea;
     width: 100%;
@@ -44,6 +45,7 @@
     font-size: 1.1rem;
 }
 
+/* Sidebar alert bar */
 .alert-bar {
     background-color: #8edafc;
     width: 100%;
@@ -58,6 +60,8 @@
 .my_links {
     color: #638396;
 }
+
+/* Sidebar searchbar */
 
 .searchbar-container {
     height: 50px;
@@ -81,10 +85,14 @@ span.my_searchbar {
     width: 15%;
 }
 
+/* Sidebar chats */
 
-.app-main-container {
-    height: 100%;
-    /* background-color: blue; */
+.sidebar-chats-container {
+    width: 100%;
+    height: calc(100% - 50px - 85px - 75px);
+    background-color: white;
+
+    overflow-y: scroll;
 }
 
 /* COLORS */
