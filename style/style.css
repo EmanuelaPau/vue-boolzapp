@@ -167,6 +167,19 @@ span.my_searchbar {
     background-color: #f3eeea;
     width: 100%;
     height: 75px;
+    padding: 10px 0;
+}
+
+.main-app-footer i {
+    font-size: 1.5rem;
+    color: #6b7376;
+    margin: 0 35px;
+}
+
+.main-app-footer input {
+    margin: 0;
+    height: 50px;
+    border: none;
 }
 
 /* COLORS */
