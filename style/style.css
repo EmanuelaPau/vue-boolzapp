@@ -135,9 +135,34 @@ span.my_searchbar {
 .main-chat-container {
     width: 100%;
     height: calc(100% - 75px - 75px);
-    background-color: #8edafc;
+    /* background-color: #8edafc; */
+    background-image: url("../img/mine.jpg");
+    padding: 70px;
     overflow-y: scroll;
 }
+
+.chat-message-container {
+    /* background-color: #8edafc; */
+    width: 100%;
+    /* min-height: 100px; */
+    margin: 0;
+    padding: 6px;
+}
+
+.chat-message {
+    min-height: 100%;
+    width: 350px;
+    min-height: 60px;
+    padding: 5px 5px 5px 15px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.chat-time-txt {
+    font-size: .7rem;
+    color: #b0bead;
+}
+
 
 /* COLORS */
 
@@ -147,6 +172,10 @@ span.my_searchbar {
 
 .my_bg-color-grey {
     background-color: #e9ebeb;
+}
+
+.my_bg-color-lt-green {
+    background-color: #d5f9ba;
 }
 
 .my_color-light-blue {
