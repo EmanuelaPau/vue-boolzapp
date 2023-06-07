@@ -95,6 +95,13 @@ span.my_searchbar {
     overflow-y: scroll;
 }
 
+.sidebar-chat-card {
+    width: 100%;
+    height: 85px;
+    padding: 20px;
+    background-color: red;
+}
+
 /* COLORS */
 
 .my_bg-color-light-azure {
