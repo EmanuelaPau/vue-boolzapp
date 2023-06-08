@@ -184,6 +184,9 @@ createApp({
             receivedClasses: 'my_bg-color-lt-white',
 
             myNewMessage: "",
+
+            search: "",
+
         }
     },
     methods: {
@@ -209,16 +212,19 @@ createApp({
             this.myNewMessage = '';
         },
 
-        // sendReply() {
-        //     myMessageObject = {
-        //         date: '10/01/2020 15:30:55',
-        //         message: 'ok',
-        //         status: 'received'
-        //     };
-        //     this.contacts[this.contactIndex].messages.push(myMessageObject);
-
-        //     this.myNewMessage = '';
-        // },
+        searchLetters() {
+            // let namesList = [];
+            this.contacts.forEach((element) => {
+                // namesList.push(element.name);
+                if (!element.name.toLowerCase().includes(this.search.toLowerCase())) {
+                    element.visible = false;
+                }
+                else {
+                    element.visible = true;
+                }
+                // console.log(element.visible);
+            })
+        }
 
     }
 }).mount('#app') 
