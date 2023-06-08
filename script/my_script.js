@@ -244,6 +244,15 @@ createApp({
             })
         },
 
+        AddMessageData(dataToReturn) {
+            if (this.contacts[this.contactIndex].messages.length < 1) {
+                console.log('there is no message')
+            } else {
+                let myData = this.contacts[this.contactIndex].messages.at(-1).dataToReturn;
+                return myData
+            }
+        }
+        ,
         turnOnMenu(menu) {
             if (menu.dropDownMenu == false) {
                 menu.dropDownMenu = true;
@@ -255,8 +264,11 @@ createApp({
 
         deleteMessage(myMessage, messageIndex) {
             console.log('rip')
-            this.contacts[this.contactIndex].messages.splice(messageIndex, 1)
-
+            if (this.contacts[this.contactIndex].messages.length < 1) {
+                console.log('there are no more messages')
+            } else {
+                this.contacts[this.contactIndex].messages.splice(messageIndex, 1)
+            }
         }
 
     }
