@@ -239,3 +239,5 @@ span.my_searchbar {
 }
 
 /* :class="contactIndex === index ? 'my_bg-color-grey' : 'my_color-light-blue'" */
+
+/* :class="dropDownMenu == true ? 'visible' : 'd-none'" */

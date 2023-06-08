@@ -244,7 +244,6 @@ createApp({
                 else {
                     element.visible = true;
                 }
-                // console.log(element.visible);
             })
         },
 

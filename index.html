@@ -121,7 +121,7 @@
                                 <div class="chat-message-container d-flex position-relative" :class="contacts[contactIndex].messages[i].status == 'received' ? 'justify-content-start' : 'justify-content-end' "  v-for="(message, i) in contacts[contactIndex].messages" >
 
                                     <!-- Drop down menu  -->
-                                    <div class="message-drop-down-menu" :class="dropDownMenu == true ? 'visible' : 'd-none'" >
+                                    <div class="message-drop-down-menu d-none"  >
                                         <ul class="list-group rounded-0">
                                             <li class="list-group-item">Message info</li>
                                             <li class="list-group-item">Deleted message</li>
