@@ -158,7 +158,7 @@ span.my_searchbar {
 }
 
 .message-drop-down-menu.visible {
-    display: block;
+    display: block !important;
 }
 
 .message-drop-down-menu ul li:hover {

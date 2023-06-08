@@ -121,7 +121,7 @@
                                 <div class="chat-message-container d-flex position-relative" :class="contacts[contactIndex].messages[i].status == 'received' ? 'justify-content-start' : 'justify-content-end' "  v-for="(message, i) in contacts[contactIndex].messages" >
 
                                     <!-- Drop down menu  -->
-                                    <div class="message-drop-down-menu d-none"  >
+                                    <div class="message-drop-down-menu d-none" :class="(message.dropDownMenu == true) ? 'visible' : ''" >
                                         <ul class="list-group rounded-0">
                                             <li class="list-group-item">Message info</li>
                                             <li class="list-group-item">Deleted message</li>
@@ -132,7 +132,7 @@
 
                                             <div class="h-100 d-flex align-items-center"><p class="m-0">{{contacts[contactIndex].messages[i].message}}</p></div>
                                             <div class="h-100 d-flex flex-column align-items-end justify-content-between">
-                                                <i class="message-options-button fa-solid fa-chevron-down" @click="turnOnMenu(dropDownMenu)"></i>
+                                                <i class="message-options-button fa-solid fa-chevron-down" @click="turnOnMenu(message)"></i>
                                                 <p class="m-0 chat-time-txt">{{contacts[contactIndex].messages[i].date.substring(10, 16)}}</p>
                                             </div>
                                     </div>

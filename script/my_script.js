@@ -1,8 +1,5 @@
 console.log('hello JS');
 
-// Milestone 4
-// Ricerca utenti: scrivendo qualcosa nell’input a sinistra, vengono visualizzati solo i contatti il cui nome contiene le lettere inserite (es, Marco, Matteo Martina -> Scrivo “mar” rimangono solo Marco e Martina)
-
 const { createApp } = Vue;
 
 createApp({
@@ -208,7 +205,7 @@ createApp({
 
             search: "",
 
-            dropDownMenu: false,
+            // dropDownMenu: false,
         }
     },
     methods: {
@@ -248,8 +245,12 @@ createApp({
         },
 
         turnOnMenu(menu) {
-            menu = true;
-            console.log('your menu is ' + menu);
+            if (menu.dropDownMenu == false) {
+                menu.dropDownMenu = true;
+            } else {
+                menu.dropDownMenu = false;
+            }
+            console.log(menu.dropDownMenu);
         }
 
     }
