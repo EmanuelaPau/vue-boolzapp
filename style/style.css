@@ -154,6 +154,11 @@ span.my_searchbar {
     border: none;
     padding: 10px;
     color: #8f8f8f;
+    cursor: pointer;
+}
+
+.message-drop-down-menu.visible {
+    display: block;
 }
 
 .message-drop-down-menu ul li:hover {

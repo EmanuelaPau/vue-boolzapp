@@ -187,6 +187,7 @@ createApp({
 
             search: "",
 
+            dropDownMenu: false,
         }
     },
     methods: {
@@ -224,6 +225,11 @@ createApp({
                 }
                 // console.log(element.visible);
             })
+        },
+
+        turnOnMenu(menu) {
+            menu = true;
+            console.log('your menu is ' + menu);
         }
 
     }
