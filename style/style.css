@@ -169,6 +169,11 @@ span.my_searchbar {
     color: #b0bead;
 }
 
+.message-options-button {
+    color: #b1b1b1;
+    cursor: pointer;
+}
+
 .main-app-footer {
     background-color: #f3eeea;
     width: 100%;

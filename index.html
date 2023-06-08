@@ -119,9 +119,14 @@
 
                                 <!-- Message -->
                                 <div class="chat-message-container d-flex" :class="contacts[contactIndex].messages[i].status == 'received' ? 'justify-content-start' : 'justify-content-end' "  v-for="(message, i) in contacts[contactIndex].messages" >
+
+                                  
                                     <div class="chat-message d-flex justify-content-between" :class="contacts[contactIndex].messages[i].status == 'received' ? receivedClasses : '' ">
                                             <div class="h-100 d-flex align-items-center"><p class="m-0">{{contacts[contactIndex].messages[i].message}}</p></div>
-                                            <div class="h-100 d-flex align-items-end"><p class="m-0 chat-time-txt">{{contacts[contactIndex].messages[i].date.substring(10, 16)}}</p></div>
+                                            <div class="h-100 d-flex flex-column align-items-end justify-content-between">
+                                                <i class="message-options-button fa-solid fa-chevron-down"></i>
+                                                <p class="m-0 chat-time-txt">{{contacts[contactIndex].messages[i].date.substring(10, 16)}}</p>
+                                            </div>
                                     </div>
                                 </div>
 
