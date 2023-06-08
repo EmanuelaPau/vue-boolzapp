@@ -205,3 +205,5 @@ span.my_searchbar {
 .my_color-light-blue {
     color: #8edafc;
 }
+
+/* :class="contactIndex === index ? 'my_bg-color-grey' : 'my_color-light-blue'" */

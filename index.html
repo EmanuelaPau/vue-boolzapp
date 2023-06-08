@@ -76,7 +76,7 @@
                             <div class="sidebar-chats-container">
                                 <!-- Chat card -->
                                 <!-- selected: my_bg-color-grey -->
-                                <div class="sidebar-chat-card d-flex justify-content-between " :class="contacts[index].visible == false ? 'd-none' : ''" :class="contactIndex === index ? 'my_bg-color-grey' : ''" v-for="(contact, index) in contacts" @click="contactIndex = index">
+                                <div class="sidebar-chat-card d-flex justify-content-between " :class="contacts[index].visible == false ? 'd-none' : '' || contactIndex === index ? 'my_bg-color-grey' : '' " v-for="(contact, index) in contacts" @click="contactIndex = index">
                                     <div class="d-flex">
                                         <img class="friend-profile-pic me-3" :src="contacts[index].avatar" alt="person chat profile pic">
                                         <div>
