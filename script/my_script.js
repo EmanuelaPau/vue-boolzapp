@@ -270,6 +270,5 @@ createApp({
                 this.contacts[this.contactIndex].messages.splice(messageIndex, 1)
             }
         }
-
     }
 }).mount('#app') 
