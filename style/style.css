@@ -142,14 +142,18 @@ span.my_searchbar {
     width: 180px;
     text-align: center;
     background-color: white;
-
+    position: absolute;
+    top: 30px;
+    right: 0;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    /* By 3drops */
 }
 
 .message-drop-down-menu ul li {
     border: none;
     padding: 10px;
     color: #8f8f8f;
-    border-radius: ni;
 }
 
 .message-drop-down-menu ul li:hover {
