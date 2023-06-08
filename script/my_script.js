@@ -250,7 +250,13 @@ createApp({
             } else {
                 menu.dropDownMenu = false;
             }
-            console.log(menu.dropDownMenu);
+            // console.log(menu.dropDownMenu);
+        },
+
+        deleteMessage(myMessage, messageIndex) {
+            console.log('rip')
+            this.contacts[this.contactIndex].messages.splice(messageIndex, 1)
+
         }
 
     }

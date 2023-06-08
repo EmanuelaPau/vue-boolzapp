@@ -124,7 +124,7 @@
                                     <div class="message-drop-down-menu d-none" :class="(message.dropDownMenu == true) ? 'visible' : ''" >
                                         <ul class="list-group rounded-0">
                                             <li class="list-group-item">Message info</li>
-                                            <li class="list-group-item">Deleted message</li>
+                                            <li class="list-group-item" @click=" deleteMessage(message, i) ">Delete message</li>
                                         </ul>
                                     </div>
                                   
