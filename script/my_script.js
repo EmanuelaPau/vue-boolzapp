@@ -266,6 +266,8 @@ createApp({
             console.log('rip')
             if (this.contacts[this.contactIndex].messages.length < 1) {
                 console.log('there are no more messages')
+                this.contacts[this.contactIndex].visible = false
+                this.contactIndex--;
             } else {
                 this.contacts[this.contactIndex].messages.splice(messageIndex, 1)
             }
