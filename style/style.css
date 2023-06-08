@@ -138,6 +138,24 @@ span.my_searchbar {
     font-size: .85rem;
 }
 
+.message-drop-down-menu {
+    width: 180px;
+    text-align: center;
+    background-color: white;
+
+}
+
+.message-drop-down-menu ul li {
+    border: none;
+    padding: 10px;
+    color: #8f8f8f;
+    border-radius: ni;
+}
+
+.message-drop-down-menu ul li:hover {
+    background-color: rgb(238, 238, 238);
+}
+
 .main-chat-container {
     width: 100%;
     height: calc(100% - 75px - 75px);
