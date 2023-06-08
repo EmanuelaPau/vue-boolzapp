@@ -72,6 +72,9 @@
                                   </form>
                             </div>
 
+
+
+
                             <!-- ACTIVE CHATS -->
                             <div class="sidebar-chats-container">
                                 <!-- Chat card -->
@@ -81,17 +84,20 @@
                                         <img class="friend-profile-pic me-3" :src="contacts[index].avatar" alt="person chat profile pic">
                                         <div>
                                             <h4 class="m-0 chat-card-name">{{contacts[index].name}}</h4>
-                                            <p v-if="contacts[contactIndex].messages.length < 1"  class="chat-cardt-txt"></p>
+                                            <p v-if="contacts[index].messages.length < 1"  class="chat-cardt-txt">Hey there! I'm using Boolzapp!</p>
                                             <p v-else class="chat-cardt-txt">{{contacts[index].messages.at(-1).message}}</p>
                                         </div>
                                     </div>
 
-                                    <p v-if="contacts[contactIndex].messages.length < 1"  class="chat-cardt-txt"></p>
+                                    <p v-if="contacts[index].messages.length < 1"  class="chat-cardt-txt"></p>
                                     <p v-else class="chat-cardt-txt">{{contacts[index].messages.at(-1).date.substring(10, 16)}}</p>
                                 </div>    
                                 
                             </div>
                         </div>
+
+
+
 
                         <!-- MAIN APP CHATS -->
                         <div class="d-none d-md-block col-8 col-md-6 col-lg-8 app-main-container p-0">
