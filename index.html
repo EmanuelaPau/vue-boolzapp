@@ -15,14 +15,30 @@
         <!-- FONT AWESOME 6.4.0 -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+        <!-- Luxon cdn -->
+        <script src=" https://cdn.jsdelivr.net/npm/vue-luxon@0.10.0/dist/vue-luxon.cjs.min.js ">
+
+        import VueLuxon from "vue-luxon";
+
+        import { DateTime } from "https://cdn.skypack.dev/luxon@1.25.0";
+
+        Vue.use(VueLuxon, {
+            input: {
+                zone: "utc",
+                format: "iso"
+            },
+            output: "short"
+        });
+
+        </script>
+
     </head>
 
     <body>
         <!-- Vue -->
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         
-        <!-- Luxon cdn -->
-        <script src=" https://cdn.jsdelivr.net/npm/luxon@3.3.0/build/global/luxon.min.js "></script>
+        <!-- <script src="luxon.js"></script> -->
 
         <div id="app">
             <div class="app-background">
