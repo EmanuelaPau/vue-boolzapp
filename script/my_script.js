@@ -1,5 +1,14 @@
-console.log('hello JS');
+import { DateTime } from 'luxon';
+
 const { createApp } = Vue;
+
+Vue.use(VueLuxon, {
+    input: {
+        zone: "utc",
+        format: "iso"
+    },
+    output: "short"
+});
 
 createApp({
     data() {
@@ -209,7 +218,10 @@ createApp({
         }
     },
     methods: {
-
+        getCurrentMonth() {
+            const currentMonth = DateTime.now().month + 1;
+            return currentMonth;
+        }
 
         sendMessage() {
             myMessageObject = {
