@@ -1,0 +1,243 @@
+.app-background {
+    width: 100vw;
+    height: 100vh;
+    /* background: rgb(255, 255, 255); */
+    background: linear-gradient(0deg, #dadbd2 85%, rgba(0, 150, 136, 1) 85%);
+    padding: 30px;
+}
+
+.app-wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    background-color: white;
+}
+
+/* SIDEBAR */
+
+.app-sidebar-container {
+    height: 100%;
+    border-right: 1px solid #e1e1e1;
+    /* background-color: brown; */
+}
+
+/* Sidebar header */
+.sidebar-header {
+    background-color: #eaeaea;
+    width: 100%;
+    height: 75px;
+    padding: 0 20px;
+}
+
+.header-profile-pic {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+}
+
+.sidebar-header-controls i {
+    margin: 0 7px;
+    font-size: 1.3rem;
+    color: #b1b1b1;
+}
+
+.my_profile-txt {
+    font-size: 1rem;
+}
+
+/* Sidebar alert bar */
+.alert-bar {
+    background-color: #8edafc;
+    width: 100%;
+    height: 85px;
+    padding: 0 20px;
+}
+
+.alert-bar div i {
+    font-size: 1.5rem;
+}
+
+.my_links {
+    color: #638396;
+}
+
+/* Sidebar searchbar */
+
+.searchbar-container {
+    height: 50px;
+    background-color: #f9f9f9;
+    /* background-color: red; */
+    padding: 5px;
+}
+
+.my_searchbar {
+    border-radius: 0;
+    border: 1px solid #ebe8e8;
+    background-color: white;
+}
+
+span.my_searchbar {
+    height: 100%;
+    width: 100%;
+}
+
+.my_search-button {
+    width: 15%;
+}
+
+/* Sidebar chats */
+
+.sidebar-chats-container {
+    width: 100%;
+    height: calc(100% - 50px - 85px - 75px);
+    background-color: white;
+
+    overflow-y: scroll;
+}
+
+.sidebar-chat-card {
+    width: 100%;
+    height: 83px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ebe8e8;
+    cursor: pointer;
+    /* background-color: palegreen; */
+    /* border: 1px solid red; */
+}
+
+.sidebar-chat-card:hover {
+    background-color: rgb(249, 246, 246);
+}
+
+.friend-profile-pic {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.chat-card-name {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.chat-cardt-txt {
+    font-size: .9rem;
+    color: #c3c2c5;
+}
+
+/* MAIN APP */
+
+.app-main-container {
+    height: 100%;
+    /* background-color: #8edafc; */
+}
+
+.header-last-access-txt {
+    color: #9da1ac;
+    font-size: .85rem;
+}
+
+.message-drop-down-menu {
+    width: 180px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    /* By 3drops */
+}
+
+.message-drop-down-menu ul li {
+    border: none;
+    padding: 10px;
+    color: #8f8f8f;
+    cursor: pointer;
+}
+
+.message-drop-down-menu.visible {
+    display: block !important;
+}
+
+.message-drop-down-menu ul li:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+.main-chat-container {
+    width: 100%;
+    height: calc(100% - 75px - 75px);
+    /* background-color: #8edafc; */
+    background-image: url("../img/mine.jpg");
+    padding: 70px;
+    overflow-y: scroll;
+}
+
+.chat-message-container {
+    /* background-color: #8edafc; */
+    width: 100%;
+    /* min-height: 100px; */
+    margin: 0;
+    padding: 6px;
+}
+
+.chat-message {
+    min-height: 100%;
+    width: 350px;
+    min-height: 60px;
+    padding: 5px 5px 5px 15px;
+    border-radius: 10px;
+    background-color: #d5f9ba;
+}
+
+.chat-time-txt {
+    font-size: .7rem;
+    color: #b0bead;
+}
+
+.message-options-button {
+    color: #b1b1b1;
+    cursor: pointer;
+}
+
+.main-app-footer {
+    background-color: #f3eeea;
+    width: 100%;
+    height: 75px;
+    padding: 10px 0;
+}
+
+.main-app-footer i {
+    font-size: 1.5rem;
+    color: #6b7376;
+    margin: 0 35px;
+}
+
+.main-app-footer input {
+    margin: 0;
+    height: 50px;
+    border: none;
+}
+
+/* COLORS */
+
+.my_bg-color-light-azure {
+    background-color: #f2fbff;
+}
+
+.my_bg-color-grey {
+    background-color: #e9ebeb;
+}
+
+.my_bg-color-lt-white {
+    background-color: white;
+}
+
+.my_color-light-blue {
+    color: #8edafc;
+}
+
+/* :class="contactIndex === index ? 'my_bg-color-grey' : 'my_color-light-blue'" */
+
+/* :class="dropDownMenu == true ? 'visible' : 'd-none'" */
