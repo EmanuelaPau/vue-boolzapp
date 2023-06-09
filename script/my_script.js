@@ -210,7 +210,7 @@ createApp({
     methods: {
         sendMessage() {
             myMessageObject = {
-                date: '10/01/2020 15:30:55',
+                date: this.getCurrentTime(),
                 message: this.myNewMessage,
                 status: 'sent'
             };
@@ -218,7 +218,7 @@ createApp({
             this.contacts[this.contactIndex].messages.push(myMessageObject);
 
             myReplyObject = {
-                date: '10/01/2020 15:30:55',
+                date: this.getCurrentTime(),
                 message: 'ok',
                 status: 'received'
             };
@@ -270,6 +270,14 @@ createApp({
             } else {
                 this.contacts[this.contactIndex].messages.splice(messageIndex, 1)
             }
+        },
+
+        getCurrentTime() {
+            // console.log('time');
+            d = new Date();
+            let hour = d.getHours()
+            let minutes = d.getMinutes();
+            return `10/01/2020 ${hour}:${minutes}`
         }
     }
 }).mount('#app') 
