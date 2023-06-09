@@ -5,7 +5,7 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            // messageTime: DateTime.now(),
+            messageTime: DateTime.now(),
 
             // Contacts array 
             contacts: [
