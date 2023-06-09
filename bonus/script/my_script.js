@@ -1,8 +1,8 @@
 const { createApp } = Vue;
 
-chatContainerElement = document.querySelector('.main-chat-container');
-// console.log(chatContainerElement);
-chatContainerElement.scrollTop = chatContainerElement.chatContainerElement;
+// chatContainerElement = document.querySelector('.main-chat-container');
+// // console.log(chatContainerElement);
+// chatContainerElement.scrollTop = chatContainerElement.chatContainerElement;
 
 createApp({
     data() {
@@ -208,6 +208,7 @@ createApp({
 
             search: "",
 
+            isModalInfoOn: false,
             // dropDownMenu: false,
         }
     },
@@ -227,7 +228,7 @@ createApp({
                 status: 'received'
             };
 
-            setTimeout(() => {
+            set dTimeout(() => {
                 this.contacts[this.contactIndex].messages.push(myReplyObject);
             }, 1000);
 

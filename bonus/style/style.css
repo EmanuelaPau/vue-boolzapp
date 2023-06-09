@@ -204,6 +204,9 @@ span.my_searchbar {
     padding: 10px;
 }
 
+.close-modal-info {
+    cursor: pointer;
+}
 
 .chat-message {
     min-height: 100%;

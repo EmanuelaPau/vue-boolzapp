@@ -126,10 +126,10 @@
                             <div class="main-chat-container" ref="myScrollTarget">
 
                                 <!-- Modal message info  -->
-                                <div class="message-info-modal-container d-flex justify-content-center align-items-center d-none">
+                                <div class="message-info-modal-container d-flex justify-content-center align-items-center" :class="isModalInfoOn == false ? 'd-none' : ''">
                                     <div class="message-info-modal">
                                         <div class="modal-header d-flex justify-content-end">
-                                            <a class="text-reset" href=""><i class="fa-solid fa-xmark "></i></a>
+                                            <i class="fa-solid fa-xmark close-modal-info" @click="isModalInfoOn == false ? isModalInfoOn = true : isModalInfoOn = false"></i>
                                         </div>
                                         <div class="flex-column message-info mb-2">
                                             <div class="d-flex align-items-center">
@@ -164,7 +164,7 @@
                                         <!-- Drop down menu  -->
                                         <div class="message-drop-down-menu d-none" :class="(message.dropDownMenu == true) ? 'visible' : ''" >
                                             <ul class="list-group rounded-0">
-                                                <li class="list-group-item" @click="console.log('openModal')">Message info</li>
+                                                <li class="list-group-item" @click="isModalInfoOn == false ? isModalInfoOn = true : isModalInfoOn = false">Message info</li>
                                                 <li class="list-group-item" @click=" deleteMessage(message, i) ">Delete message</li>
                                             </ul>
                                         </div>
