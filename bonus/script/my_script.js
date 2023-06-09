@@ -1,5 +1,9 @@
 const { createApp } = Vue;
 
+chatContainerElement = document.querySelector('.main-chat-container');
+// console.log(chatContainerElement);
+chatContainerElement.scrollTop = chatContainerElement.chatContainerElement;
+
 createApp({
     data() {
 
@@ -275,9 +279,23 @@ createApp({
         getCurrentTime() {
             // console.log('time');
             d = new Date();
-            let hour = d.getHours()
+            let hour = d.getHours();
             let minutes = d.getMinutes();
             return `10/01/2020 ${hour}:${minutes}`
-        }
+        },
+
+        // scrollToBottom() {
+        //     const targetRef = this.$refs.myScrollTarget;
+        //     this.$nextTick(() => {
+        //         targetRef.scrollTo(
+        //             {
+        //                 top: targetRef.scrollHeight,
+        //                 left: 0,
+        //                 behavior: "smooth"
+        //             }
+        //         );
+        //     });
+        // }
+
     }
 }).mount('#app') 

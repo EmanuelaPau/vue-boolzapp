@@ -93,7 +93,7 @@ span.my_searchbar {
     height: calc(100% - 50px - 85px - 75px);
     background-color: white;
 
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .sidebar-chat-card {
@@ -171,7 +171,7 @@ span.my_searchbar {
     /* background-color: #8edafc; */
     background-image: url("../img/mine.jpg");
     padding: 70px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .chat-message-container {
@@ -180,6 +180,7 @@ span.my_searchbar {
     /* min-height: 100px; */
     margin: 0;
     padding: 6px;
+    overflow: auto;
 }
 
 .chat-message {

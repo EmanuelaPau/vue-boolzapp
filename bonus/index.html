@@ -76,7 +76,7 @@
                             </div>
 
                             <!-- ACTIVE CHATS -->
-                            <div class="sidebar-chats-container">
+                            <div class="sidebar-chats-container" >
                                 <!-- Chat card -->
                                 <!-- selected: my_bg-color-grey -->
                                 <div class="sidebar-chat-card d-flex justify-content-between " :class="contacts[index].visible == false ? 'd-none' : '' || contactIndex === index ? 'my_bg-color-grey' : '' " v-for="(contact, index) in contacts" @click="contactIndex = index">
@@ -123,7 +123,7 @@
                             </div>
 
                             <!-- Chat container -->
-                            <div class="main-chat-container">
+                            <div class="main-chat-container" ref="myScrollTarget">
 
                                 <!-- Message -->
                                 <div v-if="contacts[contactIndex].messages.length < 1" class="chat-message-container d-flex "></div>
