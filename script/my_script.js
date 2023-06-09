@@ -5,6 +5,8 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
+            // messageTime: DateTime.now(),
+
             // Contacts array 
             contacts: [
                 {
@@ -211,7 +213,7 @@ createApp({
     methods: {
         sendMessage() {
             myMessageObject = {
-                date: '10/01/2020 15:30:55',
+                date: messageTime,
                 message: this.myNewMessage,
                 status: 'sent'
             };
