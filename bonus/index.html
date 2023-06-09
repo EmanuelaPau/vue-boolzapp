@@ -125,6 +125,32 @@
                             <!-- Chat container -->
                             <div class="main-chat-container" ref="myScrollTarget">
 
+                                <!-- Modal message info  -->
+                                <div class="message-info-modal-container d-flex justify-content-center align-items-center d-none">
+                                    <div class="message-info-modal">
+                                        <div class="modal-header d-flex justify-content-end">
+                                            <a class="text-reset" href=""><i class="fa-solid fa-xmark "></i></a>
+                                        </div>
+                                        <div class="flex-column message-info mb-2">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa-solid fa-check-double mb-0 me-2 my_color-blue "></i>
+                                                <h5 class="mb-0">Letto</h5>
+                                                
+                                            </div>
+                                            <p class="my_color-grey">3 minuti fa</p>
+                                        </div>
+
+                                        <div class="flex-column message-info">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa-solid fa-check-double mb-0 me-2 "></i>
+                                                <h5 class="mb-0">Consegnato</h5>
+                                                
+                                            </div>
+                                            <p class="my_color-grey">3 minuti fa</p>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <!-- Message -->
                                 <div v-if="contacts[contactIndex].messages.length < 1" class="chat-message-container d-flex "></div>
 
@@ -138,7 +164,7 @@
                                         <!-- Drop down menu  -->
                                         <div class="message-drop-down-menu d-none" :class="(message.dropDownMenu == true) ? 'visible' : ''" >
                                             <ul class="list-group rounded-0">
-                                                <li class="list-group-item">Message info</li>
+                                                <li class="list-group-item" @click="console.log('openModal')">Message info</li>
                                                 <li class="list-group-item" @click=" deleteMessage(message, i) ">Delete message</li>
                                             </ul>
                                         </div>

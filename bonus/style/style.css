@@ -130,8 +130,10 @@ span.my_searchbar {
 
 .app-main-container {
     height: 100%;
+
     /* background-color: #8edafc; */
 }
+
 
 .header-last-access-txt {
     color: #9da1ac;
@@ -171,6 +173,7 @@ span.my_searchbar {
     /* background-color: #8edafc; */
     background-image: url("../img/mine.jpg");
     padding: 70px;
+    position: relative;
     overflow-y: auto;
 }
 
@@ -180,8 +183,27 @@ span.my_searchbar {
     /* min-height: 100px; */
     margin: 0;
     padding: 6px;
-    overflow: auto;
+    /* overflow: auto; */
 }
+
+.message-info-modal-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(102, 102, 102, 0.351);
+    z-index: 2;
+}
+
+.message-info-modal {
+    background-color: white;
+
+    width: 300px;
+    /* height: 200px; */
+    padding: 10px;
+}
+
 
 .chat-message {
     min-height: 100%;
@@ -237,6 +259,18 @@ span.my_searchbar {
 
 .my_color-light-blue {
     color: #8edafc;
+}
+
+.my_color-grey {
+    color: #a3a3a3;
+}
+
+.my_color-blue {
+    color: #8edafc;
+}
+
+.message-info {
+    border-bottom: 1px solid rgba(186, 186, 186, 0.538);
 }
 
 /* :class="contactIndex === index ? 'my_bg-color-grey' : 'my_color-light-blue'" */
