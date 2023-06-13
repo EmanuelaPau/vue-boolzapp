@@ -228,7 +228,7 @@ createApp({
                 status: 'received'
             };
 
-            set dTimeout(() => {
+            setTimeout(() => {
                 this.contacts[this.contactIndex].messages.push(myReplyObject);
             }, 1000);
 
